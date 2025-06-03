@@ -4,12 +4,11 @@ import { expect } from "jsr:@std/expect";
 
 function MineSweeper(tableauMiné: string): string {
   for (let i = 0; i < tableauMiné.length; i++) {
-    if (tableauMiné[i+1] == "*") return "1";
     if(tableauMiné[i-1] == "*" && tableauMiné[i+1] == "*") return "2";
     if (tableauMiné[i-1] == "*") return "1";
-    else return "0"
+    if (tableauMiné[i+1] == "*") return "1";
    }
-   return ""
+   return "0"
   }
 
   it("zero mine", () => {
