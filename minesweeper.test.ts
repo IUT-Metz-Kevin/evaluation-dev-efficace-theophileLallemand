@@ -3,7 +3,7 @@ import { expect } from "jsr:@std/expect";
 
 function MineSweeper(tableauMiné: string): string {
     if (tableauMiné[1] == "*") return "1";
-    if(tableauMiné[1] == "*" && tableauMiné[2] == "*") return "2";
+    if(tableauMiné[0] == "*" && tableauMiné[2] == "*") return "2";
     else return "0"
    }
 
@@ -16,8 +16,8 @@ function MineSweeper(tableauMiné: string): string {
 
   });
 
-    it("2 mines", () => {
-     expect(MineSweeper(".**")).toBe("2");
+    it("2 mines (une de chaque c", () => {
+     expect(MineSweeper("*.*")).toBe("2");
 
   });
 
