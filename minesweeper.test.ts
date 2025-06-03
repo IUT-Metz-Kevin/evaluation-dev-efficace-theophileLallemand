@@ -33,9 +33,10 @@ it("2 mines (une de chaque coté)", () => {
 
 });
 
+it("2 mines (une à coté et un en diagonale )", () => {
+  expect(MineSweeper(".*....\n.*")).toBe("2");
+});
+
 it("2 mines (une à coté et un en dessous)", () => {
   expect(MineSweeper(".*....\n*")).toBe("2");
-});
-it("2 mines (une à coté et un en diagonale)", () => {
-  expect(MineSweeper(".*....\n.*")).toBe("2");
 });
