@@ -20,7 +20,7 @@ function MineSweeper(tableauMiné: string): string {
      expect(MineSweeper(".*")).toBe("1");
 
   });
-
+  
       it("1 mine avant", () => {
      expect(MineSweeper("*.")).toBe("1");
 
