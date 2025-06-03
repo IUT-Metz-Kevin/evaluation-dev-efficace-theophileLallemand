@@ -3,14 +3,16 @@ import { expect } from "jsr:@std/expect";
 
 function MineSweeper(tableauMiné: string): string {
    for (let i = 0; i === tableauMiné.length; i++) {
-    if (tableauMiné[i + 1] == "*") return "1";
+    if (tableauMiné[i+1] == "*") return "1";
    }
   return "0"
 }
 
-describe("add function", () => {
-  it("adds two numbers correctly", () => {
-     expect(MineSweeper(".")).toBe("0");
+describe("test pour nombre de mine", () => {
+
+
+    it("1 mine", () => {
+     expect(MineSweeper(".*")).toBe("1");
   });
 
 });
