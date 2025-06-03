@@ -10,7 +10,7 @@ function MineSweeper(tableauMiné: string): string {
    }
    return "0"
   }
-
+  
   it("zero mine", () => {
      expect(MineSweeper(".")).toBe("0");
   });
